@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <header>
+        <header id="heder">
             <div class="top-contact-info">
                 <div class="direct-contact">
                     <div class="contact-option" onclick="window.open('https://g.co/kgs/JeHnM1u','_blank')">
@@ -95,6 +95,7 @@
                 </div>
             </div>
             <div class="mobile-navbar" onclick="toggleMobileMenu(false)">
+                Menu
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="mobile-menu" id="mobileMenu">
@@ -260,11 +261,14 @@
         </div>
         <footer>
             <div>
-                <a href="">FIRSTONE MEDIA</a>
+                <a href="index.html">FIRSTONE MEDIA</a>
                 © 2024 | Tous les droits sont réservés.
             </div>
         </footer>
         <div class="overlay" onclick="toggleMobileMenu(false)" id="overlay"></div>
+        <div id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
     </div>
 
     <script src="script.js"></script>
