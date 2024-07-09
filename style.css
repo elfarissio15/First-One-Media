@@ -16,6 +16,7 @@ header {
     position: fixed;
     background-color: white;
     z-index: 1;
+    transition: top 0.3s;
 }
 
 /* Styling for contact information */
@@ -27,6 +28,7 @@ header {
     max-height: 50px;
     height: 50px;
     transition: max-height .3s;
+
 
 }
 
@@ -54,7 +56,7 @@ header {
 }
 
 .contact-option:hover {
-   color: #f5ac00;
+   color: #00bf80;
 }
 .contact-option i {
     margin-right: 5px; /* Spacing between icon and text */
@@ -250,7 +252,7 @@ header {
 
 .Projet-Section{
     width: 100%;
-    background-color: #f5ac00;
+    background-color: #00bf80;
     text-align: center;
     color: white;
     padding: .5rem 0px 2rem 0px ;
@@ -298,7 +300,7 @@ footer a{
 }
 
 footer a:hover{
-    color: #f5ac00;
+    color: #33bbff;
 }
 
 .sub-indirect-contact{
@@ -398,11 +400,12 @@ footer a:hover{
     position: absolute;
     right: 20px;
     top: 20px;
+    gap: 10px;
+    display: none;
 }
 .mobile-navbar i {
     font-size: 30px;
     cursor: pointer;
-    display: none;
 }
 
 .mobile-dropdown-content {
@@ -430,6 +433,25 @@ footer a:hover{
     justify-content: center;
     gap: 20px;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none;
+    /* Initially hide the button */
+    transition: bottom 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #00bf80;
+}
+
+
 
 @media (max-width:1330px) {
     .top-contact-info{
@@ -477,8 +499,8 @@ footer a:hover{
         
     }
 
-    .mobile-navbar i{
-        display: block;
+    .mobile-navbar {
+        display: flex;
     }
 
     .menu-nav-container{
