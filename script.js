@@ -111,3 +111,35 @@ window.onscroll = function() {
         backToTopBtn.style.display = "none";
     }
 };
+
+document.getElementById('contactInformations').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Fetch API example to handle form submission asynchronously
+    
+    fetch('https://precious-gwyneth-oussamaelfarissi-0520a5cc.koyeb.app/email.php', {
+        method: 'POST',
+        body: new FormData(this)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Response:', data);
+        // Handle success or failure here (update UI, show messages, etc.)
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Handle errors here
+    });
+});
+
+function initMap() {
+    var location = {lat: -37.814, lng: 144.96332};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: location
+    });
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
+}
