@@ -452,6 +452,134 @@ footer a:hover{
 }
 
 
+.contact-form-container {
+    width: 100%;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        margin-bottom: 60px;
+    }
+}
+.Message-infos{
+    width: 100%;
+    max-width: 700px;
+    align-items: center;
+    text-align: center ;
+    padding: 10px 0px;
+}
+
+.input-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 30px 0px;
+}
+
+.input-field {
+    position: relative;
+    width: 100%;
+    line-height: 44px;
+}
+
+.inpt {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+    margin: auto;
+}
+.inpt:invalid{
+    outline: 0;
+    color: #ff2300;
+    border-color: #ff2300;
+}
+
+.inpt:valid {
+  border-color: #00dd22;
+}
+.inpt:focus {
+    border-color: #00bf80;
+    outline: none;
+    background-color: #e6f7ff;
+}
+
+.lbl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #d3d3d3;
+    font-weight: bold;
+    transition: all 0.3s;
+    transition: 0.2s all;
+    cursor: text;
+}
+
+.inpt:focus~.lbl {
+  font-size: 14px;
+  top: -30px;
+  color: #00bf80;
+}
+.inpt:valid~.lbl {
+    color: #00dd22;
+    font-size: 14px;
+    top: -30px;
+}
+
+.submit-btn {
+    width: 200px;
+    padding: 12px;
+    border: none;
+    background-color: #00bf80;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.phone, .email ,.location{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.phone:hover, .email:hover,.design:hover ,.location:hover{
+    color: #30b862;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.phone i, .email i ,.location i{
+    margin-right: 10px;
+}
+
+.phone p, .email p ,.location p{
+    margin: 0;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.location-maps{
+    text-align: center;
+    margin-top: 100px;
+}
 
 @media (max-width:1330px) {
     .top-contact-info{
@@ -491,6 +619,11 @@ footer a:hover{
         font-size: 8px;
 
     }
+
+    .location-maps{
+        text-align: center;
+        margin-top: 0px;
+    }
     
 }
 @media (max-width: 768px) {
@@ -522,6 +655,13 @@ footer a:hover{
     footer{
         font-size: 17px;
         text-align: center;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+    .inpt{
+        width: 90vw;
     }
 
  }
