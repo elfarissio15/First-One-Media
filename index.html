@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="top-contact-info">
+                <div class="direct-contact">
+                    <div class="contact-option" onclick="window.open('https://g.co/kgs/JeHnM1u','_blank')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Rue 19, Othmane 2 Ain Chock – Casablanca</p>
+                    </div>
+                    <div class="contact-option" onclick="window.open('https://g.co/kgs/JeHnM1u','_blank')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Rue Igherm Hay ELhassani, Inezgane Agadir</p>
+                    </div>
+                    <div class="contact-option" onclick="window.location.href='tel:+212608258951'">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <p>+212 (0) 608 258 951</p>
+                    </div>
+                    <div class="contact-option" onclick="window.location.href='tel:+212528332433'">
+                        <i class="fa-solid fa-square-phone-flip"></i>
+                        <p>+212 (0) 528 332 433</p>
+                    </div>
+                </div>
+                <div class="indirect-contact">
+                    <div class="contact-option" onclick="window.location.href='mailto:contact@firstonemedia.ma'">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-option" onclick="window.open('https://www.linkedin.com/company/first-one-media/','_blank')">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="contact-option" onclick="window.open('https://web.facebook.com/first1media?_rdc=1&_rdr','_blank')">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="contact-option" onclick="window.open('https://www.instagram.com/firstone_media/','_blank')">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="contact-option" onclick="window.open('https://www.behance.net/firstonemedia1','_blank')">
+                        <i class="fa-brands fa-behance"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="logo-container">
+                    <img src="https://i.ibb.co/zrsSPZS/logo-2-1024x1024.png" alt="Logo Image">
+                </div>
+                <div class="menu-nav-container">
+                    <span class="menu-item with-dropdown" data-dropdown="produits">Nos Produits <i class="fa-solid fa-angle-down"></i></span>
+                    <div class="dropdown-content produits">
+                        <div class="dropdown-menu">
+                            <a href="#">FIRST NEWS</a>
+                            <a href="#">FIRST COMMUNICATION</a>
+                            <a href="#">FIRST ONE MEDIA</a>
+                            <a href="#">FIRST EVENT</a>
+                            <a href="#">FIRST MOVIE</a>
+                            <a href="#">FIRST ETUDE</a>
+                            <a href="#">FIRST ACADÉMIE</a>
+                        </div>
+                    </div>
+                    <span class="menu-item">Galerie</span>
+                    <span class="menu-item with-dropdown" data-dropdown="services">Nos Services <i class="fa-solid fa-angle-down"></i></span>
+                    <div class="dropdown-content services">
+                        <div class="dropdown-menu">
+                            <a href="#">agence de production audiovisuelle</a>
+                            <a href="#">Agence publicité  Dégital SMMA (Facebook  instagram tiktok)</a>
+                            <a href="#">conception graphique</a>
+                            <a href="#">creation site web</a>
+                        </div>
+                    </div>
+                    <span class="menu-item">QUI SOMME NOUS ?</span>
+                </div>
+                <div class="sub-indirect-contact">
+                    <div class="contact-option" onclick="window.location.href='mailto:contact@firstonemedia.ma'">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-option" onclick="window.open('https://www.linkedin.com/company/first-one-media/','_blank')">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="contact-option" onclick="window.open('https://web.facebook.com/first1media?_rdc=1&_rdr','_blank')">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="contact-option" onclick="window.open('https://www.instagram.com/firstone_media/','_blank')">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="contact-option" onclick="window.open('https://www.behance.net/firstonemedia1','_blank')">
+                        <i class="fa-brands fa-behance"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-navbar" onclick="toggleMobileMenu(false)">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <div class="top-menu">
+                        <div class="mobile-menu-close" onclick="toggleMobileMenu(false)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <h3>Menu</h3>
+                    </div>
+                    <div class="mobile-contact">
+                        <div class="contact-option" onclick="window.open('https://g.co/kgs/JeHnM1u','_blank')">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Rue 19, Othmane 2 Ain Chock – Casablanca</p>
+                        </div>
+                        <div class="contact-option" onclick="window.open('https://g.co/kgs/JeHnM1u','_blank')">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Rue Igherm Hay ELhassani, Inezgane Agadir</p>
+                        </div>
+                        <div class="contact-option" onclick="window.location.href='tel:+212608258951'">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <p>+212 (0) 608 258 951</p>
+                        </div>
+                        <div class="contact-option" onclick="window.location.href='tel:+212528332433'">
+                            <i class="fa-solid fa-square-phone-flip"></i>
+                            <p>+212 (0) 528 332 433</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu-topics">
+                        
+                        <div class="mobile-dropdown">
+                            <span id="AxeMobile" class="multi-Topic" onclick="toggleDropdown('produits')">
+                                Nos Produits
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                            <div class="mobile-dropdown-content" id="produitsDropdown">
+                                <span><a href="#">FIRST NEWS</a></span>
+                                <span><a href="#">FIRST COMMUNICATION</a></span>
+                                <span><a href="#">FIRST ONE MEDIA</a></span>
+                                <span><a href="#">FIRST EVENT</a></span>
+                                <span><a href="#">FIRST MOVIE</a></span>
+                                <span><a href="#">FIRST ETUDE</a></span>
+                                <span><a href="#">FIRST ACADÉMIE</a></span>
+                            </div>
+                        </div>
+                        <span>Galerie</span>
+                        <div class="mobile-dropdown">
+                            <span class="multi-Topic" onclick="toggleDropdown('services')">
+                                Nos Services
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                            <div class="mobile-dropdown-content" id="servicesDropdown">
+                                <span><a href="#">agence de production audiovisuelle</a></span>
+                                <span><a href="#">Agence publicité  Dégital SMMA (Facebook  instagram tiktok)</a></span>
+                                <span><a href="#">conception graphique</a></span>
+                                <span><a href="#">creation site web</a></span>
+                            </div>
+                        </div>
+                        <span>QUI SOMME NOUS ?</span>
+                    </div>
+                    <div class="contact-shortcuts">
+                        <i class="fa-solid fa-envelope" onclick="window.location.href='mailto:contact@firstonemedia.ma'"></i>
+                        <i class="fa-brands fa-linkedin" onclick="window.open('https://www.linkedin.com/company/first-one-media/','_blank')"></i>
+                        <i class="fa-brands fa-facebook"  onclick="window.open('https://web.facebook.com/first1media?_rdc=1&_rdr','_blank')"></i>
+                        <i class="fa-brands fa-instagram" onclick="window.open('https://www.instagram.com/firstone_media/','_blank')"></i>
+                        <i class="fa-brands fa-behance" onclick="window.open('https://www.behance.net/firstonemedia1','_blank')"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="home-wrapper">
+            <div class="shortcuts-container">
+                <div class="single-shortcut">
+                    <div class="shortcut-image-container">
+                        <a href="">
+                            <img src="https://i.ibb.co/d7tvHy3/01-01.png" alt="ShortCut Image 1">
+                        </a>
+                    </div>
+                    <div class="shortcut-title">
+                        <h1>FIRST NEWS</h1>
+                        <h3>Agence de presse</h3>
+                    </div>
+                </div>
+                <div class="single-shortcut">
+                    <div class="shortcut-image-container">
+                        <a href="">
+                            <img src="https://i.ibb.co/r46NGmq/01-02.png" alt="ShortCut Image 2">
+                        </a>
+                    </div>
+                    <div class="shortcut-title">
+                        <h1>FIRST COM</h1>
+                        <h3>Communication / Digital</h3>
+                    </div>
+                </div>
+                <div class="single-shortcut">
+                    <div class="shortcut-image-container">
+                        <a href="">
+                            <img src="https://i.ibb.co/9wqgqtp/01-03.png" alt="ShortCut Image 3">
+                        </a>
+                    </div>
+                    <div class="shortcut-title">
+                        <h1>FIRST ONE <br> MEDIA GROUP</h1>
+                    </div>
+                </div>
+                <div class="single-shortcut">
+                    <div class="shortcut-image-container">
+                        <a href="">
+                            <img src="https://i.ibb.co/tZ5HJZN/01-04.png" alt="ShortCut Image 4">
+                        </a>
+                    </div>
+                    <div class="shortcut-title">
+                        <h1>FIRST EVENT</h1>
+                        <h3>Evenementiel</h3>
+                    </div>
+                </div>
+                <div class="single-shortcut">
+                    <div class="shortcut-image-container">
+                        <a href="">
+                            <img src="https://i.ibb.co/yPNQbK9/01-05.png" alt="ShortCut Image 5">
+                        </a>
+                    </div>
+                    <div class="shortcut-title">
+                        <h1>FIRST MOVIE</h1>
+                        <h3>Cinématographie</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="speciality-section">
+                <div class="title-Agence">First One Media Agence de:</div>
+                <div class="Specialitys-Container">
+                    <div class="single-Speciality">*Production Audiovisuelle, Cinématographie</div>
+                    <div class="single-Speciality">*Publicité et Marketing Digital</div>
+                    <div class="single-Speciality">*Communication, Presse</div>
+                    <div class="single-Speciality">*Formation, Études</div>
+                </div>
+            </div>
+        </div>
+        <div class="confience-section">
+            <div class="Text-Container">
+                <div class="Title">
+                    <h1>Ils Nous Font Confiance</h1>
+                </div>
+                <div class="Description">
+                    <p>Notre activité ne repose pas sur une simple relation commerciale,
+                        nous considérons davantage nos clients comme des partenaires de 
+                        projets que nous accompagnons afin d’atteindre leurs objectifs et
+                        développer leur activité. Nous veillons à les satisfaire et 
+                        créons une relation de confiance pour travailler 
+                        avec chacun d’eux sur le long terme.</p>
+                </div>
+            </div>
+            <div class="image-Companies-container">
+                <img src="https://i.ibb.co/Qv4c5pT/firstone-logos-1280x2061.png" alt="">
+            </div>
+        </div>
+        <div class="Projet-Section">
+            <div class="Contact-wraper">
+                <h1>Un Projet À Nous Confier ?</h1>
+                <p>Parlez-nous rapidement de votre projet et nous vous contacterons dans les plus brefs délais pour en discuter!</p>
+                <button id="ContactButton">CONTACTER-NOUS</button>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <a href="">FIRSTONE MEDIA</a>
+                © 2024 | Tous les droits sont réservés.
+            </div>
+        </footer>
+        <div class="overlay" onclick="toggleMobileMenu(false)" id="overlay"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
