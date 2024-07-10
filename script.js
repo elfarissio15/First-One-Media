@@ -98,10 +98,14 @@ window.onscroll = function() {
     var backToTopBtn = document.getElementById("backToTopBtn");
     var currentScroll = window.scrollY || document.documentElement.scrollTop;
     if (currentScroll > lastScrollTop) {
-        header.style.top = "-100px";
+        if (window.innerWidth > 1330) {
+            header.style.top = "-52px";
+        }
         backToTopBtn.style.bottom = "10px";
-    } else {
-        header.style.top = "0";
+    } else{
+        if(currentScroll === 0){
+            header.style.top = "0";
+        }
         backToTopBtn.style.bottom = "-10px";
     }
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
@@ -112,42 +116,8 @@ window.onscroll = function() {
     }
 };
 
-document.getElementById('contactInformations').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
-
-    // Fetch API example to handle form submission asynchronously
-    
-    fetch('https://legal-wenda-oussamaelfarissi-ce59982d.koyeb.app/', {
-        method: 'POST',
-        body: new FormData(this)
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Response:', data);
-        // Handle success or failure here (update UI, show messages, etc.)
-        if (data.success) {
-            alert('Message sent successfully!');
-            // You can also update the UI or perform other actions here
-        } else {
-            alert('Failed to send message. Please try again.');
-            // Handle other cases where the message might not have been sent successfully
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        // Handle errors here
-        alert('Error sending message. Please try again later.');
-    });
-});
-
-function initMap() {
-    var location = {lat: -37.814, lng: 144.96332};
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
-        center: location
-    });
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
+window.onresize = function() {
+    if (window.innerWidth < 1330 && header.style.top === "-52px") {
+        header.style.top = "0";
+    }
 }
