@@ -730,6 +730,7 @@ footer a:hover{
     .single-shortcut {
         width: 142px;
         margin: 0 10px;
+        line-height: 1rem;
     }
 
     .shortcut-image-container img {
