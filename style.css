@@ -213,6 +213,7 @@ header {
     font-weight: bold;
     margin: 0 10px;
     text-align: center;
+    line-height: 1.7rem;
 }
 
 .single-shortcut:hover .shortcut-image-container img {
@@ -673,7 +674,6 @@ footer a:hover{
     .single-shortcut {
         width:210px;
         margin: 0 10px;
-        line-height: 1.7rem;
     }
 
     .shortcut-title h1 {
