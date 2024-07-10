@@ -125,10 +125,18 @@ document.getElementById('contactInformations').addEventListener('submit', functi
     .then(data => {
         console.log('Response:', data);
         // Handle success or failure here (update UI, show messages, etc.)
+        if (data.success) {
+            alert('Message sent successfully!');
+            // You can also update the UI or perform other actions here
+        } else {
+            alert('Failed to send message. Please try again.');
+            // Handle other cases where the message might not have been sent successfully
+        }
     })
     .catch(error => {
         console.error('Error:', error);
         // Handle errors here
+        alert('Error sending message. Please try again later.');
     });
 });
 
