@@ -662,16 +662,16 @@ footer a:hover{
         top: -10px;
     }
     .single-shortcut {
-        width:192px;
-        margin: 0 20px;
+        width:210px;
+        margin: 0 10px;
     }
 
     .shortcut-title h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
     
     .shortcut-title h3 {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
