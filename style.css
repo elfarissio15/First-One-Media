@@ -151,13 +151,13 @@ header {
 
 .produits {
     width: 300px;
-    left:0%;
+    left:2%;
 
 }
 
 .services {
     width: 450px;
-    left: 40%;
+    left: 44%;
 
 }
 
@@ -657,6 +657,15 @@ footer a:hover{
         margin-top: -5px;
     }
 
+    .produits {
+        left:-1%;
+    
+    }
+    
+    .services {
+        left: 39%;
+    
+    }
     .logo-container {
         left: 20px;
         top: -10px;
