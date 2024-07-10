@@ -374,7 +374,7 @@ footer a:hover{
 }
 
 .mobile-menu-topics span:hover {
-    color: #121212; /* Lighten text color on hover */
+    color: #444; /* Lighten text color on hover */
 }
 .top-menu {
     display: flex;
@@ -413,13 +413,13 @@ footer a:hover{
     padding-left: 30px;
     overflow: hidden;
     max-height: 0;
-    background-color: #2a2929;
+    background-color: #f2f2f2;
     margin: 0px -20px;  
     transition: all 0.5s ease-in-out;
 }
 
 .mobile-dropdown-content a {
-    color: #ccc; 
+    color: #333; 
     text-decoration: none;
 }
 
