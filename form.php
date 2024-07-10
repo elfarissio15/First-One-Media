@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = isset($_POST['message']) ? htmlspecialchars(trim($_POST['message'])) : '';
 
     // Validate required fields (add more as necessary)
-    if (empty($nom) || empty($email) || empty($ouverture)) {
+    if (empty($nom) || empty($email) || empty($message)) {
         $status = 'error';
         $message = 'Veuillez remplir tous les champs obligatoires.';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
