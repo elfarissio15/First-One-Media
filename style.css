@@ -242,11 +242,11 @@ header {
     display: flex;
     gap: 10px;
     margin: 50px auto 100px auto;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 27px;
+    font-weight: 500;
     position: relative;
-    letter-spacing: .1rem;
-    line-height: 32px;
+    letter-spacing: .05rem;
+    line-height: 38px;
 }
 
 .title-Agence{
@@ -255,7 +255,7 @@ header {
     height: fit-content;
     border-radius:25px;
     padding: 1px 10px;
-    color: rgb(117, 10, 10);
+    color: #4A1810;
 }
 
 .Specialitys-Container{
@@ -664,6 +664,7 @@ footer a:hover{
     .single-shortcut {
         width:210px;
         margin: 0 10px;
+        line-height: 1.7rem;
     }
 
     .shortcut-title h1 {
