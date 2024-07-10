@@ -83,6 +83,7 @@ header {
 
 .logo-container img{
     width: 100px;
+    cursor:pointer;
 }
 
 .menu-nav-container {
