@@ -56,7 +56,7 @@ header {
 }
 
 .contact-option:hover {
-   color: #00bf80;
+   color: #f5ac00;
 }
 .contact-option i {
     margin-right: 5px; /* Spacing between icon and text */
@@ -328,8 +328,8 @@ footer a:hover{
     width: 99%; /* Adjust width as needed */
     max-width: 400px; /* Maximum width of the menu */
     height: 100%;
-    background-color: #1f1f1f; /* Dark background color */
-    color: white;
+    background-color: white; 
+    color: black;
     z-index: 4;
     overflow-y: auto; /* Enable vertical scrolling if needed */
     transition: right 0.3s ease;
@@ -352,7 +352,6 @@ footer a:hover{
 
 .mobile-menu-topics {
     margin: 20px 0px;
-    color: #bbbbbb;
 }
 .mobile-menu-topics #HomeAxe {
     margin-top: 20px;
@@ -375,7 +374,7 @@ footer a:hover{
 }
 
 .mobile-menu-topics span:hover {
-    color: #f0f0f0; /* Lighten text color on hover */
+    color: #121212; /* Lighten text color on hover */
 }
 .top-menu {
     display: flex;
