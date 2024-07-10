@@ -1,6 +1,6 @@
 
 body{
-    font-family:'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Open Sans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 60px;
@@ -23,7 +23,7 @@ header {
 .top-contact-info {
     display: flex;
     justify-content: space-between;
-    background-color : rgba(255,103,43,0.71);
+    background-color : #FC8848;
     width: 100%;
     max-height: 50px;
     height: 50px;
@@ -32,18 +32,34 @@ header {
 
 }
 
-.direct-contact , .indirect-contact{
+.direct-contact{
     display: flex;
     color: white;
     margin: auto 3%;
     i{
-        font-size: 15px;
+        font-size: 13px;
     }
     .contact-option p{
         font-size: 12px;
+        font-weight: bold;
+        letter-spacing: .8px;
     }
     
 }
+.indirect-contact{
+    display: flex;
+    color: white;
+    margin: auto 45px;
+    i{
+        font-size: 18px;
+    }
+    .contact-option{
+        margin: 0;
+        margin-left: 15px;
+        padding: 0;
+    }
+}
+
 
 
 
@@ -72,34 +88,45 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px 20px; /* Adjust the padding as needed */
+    padding: 20px; /* Adjust the padding as needed */
     height: 60px;
+    transition: all .3s;
+    
 }
 
 .logo-container {
     position: absolute;
-    left: 4%; /* Adjust the left positioning as needed */
+    top: 40px;
+    left: 78px;
+    transition: all .3s;
 }
 
 .logo-container img{
-    width: 100px;
+    width: 120px;
     cursor:pointer;
 }
 
 .menu-nav-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: fit-content;
     font-weight: bold;
     position: relative;
-    height: 40px;
+    height:40px ;
+    margin-top: -15px;
 }
 
 .menu-item {
     margin: 0 20px;
     position: relative;
     cursor: pointer;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
+    box-sizing: border-box;
+    height: 20px;
+    transition: all .3s;
+    padding: 0px 10px;
+    font-size: 20px;
 }
 .menu-item:hover{
     color: #f5ac00;
@@ -109,11 +136,11 @@ header {
     display: block; /* Set to block for animation purposes, but visibility and height will handle actual showing/hiding */
     max-height: 0;
     overflow: hidden;
+    padding-top: 30px;
     position: absolute;
     top: 100%; /* Adjust to position correctly below the menu item */
-    background-color: #000000;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2;
+    background-color: #fff;
+    z-index: 1;
     transition: max-height 0.5s ease, visibility 0.5s ease;
     visibility: hidden; /* Initially hidden */
 }
@@ -123,25 +150,28 @@ header {
 }
 
 .produits {
-    width: 255px;
-    left:-10%;
+    width: 300px;
+    left:2%;
+
 }
 
 .services {
-    width: 530px;
+    width: 450px;
     left: 43%;
+
 }
 
 .dropdown-content .dropdown-menu {
     padding: 0px 16px;
     text-decoration: none;
     display: block;
-    background-color: #000000;
+    background-color: #fff;
     border-radius: 15px;
+    font-size: 19px;
     
 }
 .dropdown-content a {
-    color: #ffffff;
+    color: #000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -152,16 +182,14 @@ header {
 }
 
 .home-wrapper {
-    width: 100%;
-    height: 90svh;
+    width: 100svw;
+    height: 100svh;
     background-image: url('https://i.ibb.co/ZVWjPFD/slide-1.jpg'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 150px;
+    padding-top: 17svh;
 }
 
 .shortcuts-container {
@@ -170,6 +198,8 @@ header {
     justify-content: center;
     align-items: center;
     gap:25px; /* Adjust spacing between shortcuts */
+
+
 }
 
 .single-shortcut {
@@ -178,10 +208,10 @@ header {
     align-items: center;
     border-radius: 10px;
     padding: 0px;
-    width: 192px;
+    width:238px;
     color: white;
     font-weight: bold;
-    margin: 0 20px;
+    margin: 0 10px;
     text-align: center;
 }
 
@@ -198,31 +228,33 @@ header {
 }
 
 .shortcut-title h1 {
-    font-size: 20px;
+    font-size: 27px;
     margin: 0;
 
 }
 
 .shortcut-title h3 {
-    font-size: 16px;
+    font-size: 20.5px;
     margin: 0;
 }
 
 .speciality-section{
     display: flex;
     gap: 10px;
-    margin: 100px auto;
+    margin: 50px auto 100px auto;
     font-size: 20px;
     font-weight: bold;
     position: relative;
+    letter-spacing: .1rem;
+    line-height: 32px;
 }
 
 .title-Agence{
     background-color: white;
     border: none;
     height: fit-content;
-    border-radius: 15px;
-    padding:  1px 10px;
+    border-radius:25px;
+    padding: 1px 10px;
     color: rgb(117, 10, 10);
 }
 
@@ -232,17 +264,32 @@ header {
 
 .confience-section{
     margin: 150px auto;
-    max-width: 1280px;
+    width: 1380px;
+    max-width: 100%;
 }
 .Text-Container{
-    width: 1000px;
-    max-width: 90%;
+    width: 95%;
     margin: auto;
+    
+    color: #2b2c36;
+}
+
+.Text-Container h1{
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+
+.Description p {
+    margin-top: 0px;
+    font-size: 18px;
+    line-height: 2rem;
 }
 
 .Description{
     color: #333;
+    font-size: 26px;
 }
+
 .image-Companies-container{
     width: 100%;
     position: relative;
@@ -282,7 +329,7 @@ header {
 #ContactButton:hover{
     color: #20202e;
     background-color: white;
-    box-shadow: 0 2px 8px  rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.1);
 }
 
 footer{
@@ -308,6 +355,9 @@ footer a:hover{
     display: none;
     position: absolute;
     right: 5px;
+    .contact-option{
+        margin-left: -10px;
+    }
 }
 
 
@@ -399,13 +449,21 @@ footer a:hover{
 .mobile-navbar{
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 25px;
     gap: 10px;
     display: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all .3s;
+    cursor: pointer;
 }
 .mobile-navbar i {
     font-size: 30px;
-    cursor: pointer;
+    
+}
+
+.mobile-navbar:hover{
+    color: #f5ac00;
 }
 
 .mobile-dropdown-content {
@@ -414,6 +472,7 @@ footer a:hover{
     overflow: hidden;
     max-height: 0;
     background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0px -20px;  
     transition: all 0.5s ease-in-out;
 }
@@ -444,7 +503,7 @@ footer a:hover{
     cursor: pointer;
     display: none;
     /* Initially hide the button */
-    transition: bottom 0.3s;
+    transition: all 0.3s;
 }
 
 .back-to-top:hover {
@@ -590,12 +649,67 @@ footer a:hover{
     .sub-indirect-contact{
         display: flex;
     }
+    .menu-item {
+        margin: 0 5px;
+        font-size: 16px;
+    }
+    .menu-nav-container {
+        margin-top: 0px;
+    }
+
+    .logo-container {
+        left: 20px;
+        top: -10px;
+    }
+    .single-shortcut {
+        width:192px;
+        margin: 0 20px;
+    }
+
+    .shortcut-title h1 {
+        font-size: 25px;
+    }
+    
+    .shortcut-title h3 {
+        font-size: 16px;
+    }
 }
 
-@media (max-width:1080px){
-    .sub-indirect-contact{
-        display: none;
+@media (max-width:1250px) {
+
+
+    .logo-container {
+        left: 20px;
+        top: -5px;
     }
+
+    .logo-container img {
+        width: 90px;
+    }
+
+    .single-shortcut {
+        width:180px;
+        margin: 0 15px;
+    }
+
+    .shortcut-image-container img {
+        width: 180px; /* Adjust size as needed */
+    }
+
+    .shortcut-title h1 {
+        font-size: 23px;
+    }
+    
+    .shortcut-title h3 {
+        font-size: 14px;
+    }
+
+    .main-header {
+        height: 40px;
+    }    
+}
+@media (max-width:1080px){
+    
     .home-wrapper{
         height: auto;
     }
@@ -613,11 +727,11 @@ footer a:hover{
     }
     
     .shortcut-title h1 {
-        font-size: 12px;
+        font-size: 16px;
     }
     
     .shortcut-title h3 {
-        font-size: 8px;
+        font-size: 12px;
 
     }
 
@@ -625,32 +739,69 @@ footer a:hover{
         text-align: center;
         margin-top: 0px;
     }
+    .speciality-section{
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
     
 }
-@media (max-width: 768px) {
+
+@media (max-width:917px) {
+    .menu-nav-container{
+        display: none;
+    }
     .top-contact-info{
         display: none;
         
+    }
+    .sub-indirect-contact{
+        display: none;
     }
 
     .mobile-navbar {
         display: flex;
     }
 
-    .menu-nav-container{
-        display: none;
+    .single-shortcut {
+        width:110px;
+        margin: 0 10px;
     }
+
+    .shortcut-image-container img {
+        width: 130px; /* Adjust size as needed */
+    }
+
+    .shortcut-title h1 {
+        font-size: 14px;
+    }
+    
+    .shortcut-title h3 {
+        font-size: 9px;
+    }
+    .home-wrapper{
+        padding-top: 15svh;
+    }
+
+}
+@media (max-width: 768px) {
+    
+
+    
     .speciality-section{
         flex-direction: column;
         text-align: center;
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .title-Agence{
+        font-size: 19px;
     }
     .confience-section h1,.Contact-wraper h1{
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .confience-section p ,.Contact-wraper p{
-        font-size: 16px;
+        font-size: 18px;
+
     }
 
     footer{
@@ -665,4 +816,52 @@ footer a:hover{
         width: 90vw;
     }
 
+    .single-shortcut {
+        width:100px;
+        margin: 0 10px;
+    }
+
+    .shortcut-image-container img {
+        width: 130px; /* Adjust size as needed */
+    }
+
+    .shortcut-title h1 {
+        font-size: 14px;
+    }
+    
+    .shortcut-title h3 {
+        font-size: 8.6px;
+    }
+    .home-wrapper{
+        padding-top: 8svh;
+    }
+
+
+
  }
+
+ @media (max-width:650px) {
+    .single-shortcut {
+        width:150px;
+        margin: 0 10px;
+    }
+
+    .shortcut-image-container img {
+        width: 140px; /* Adjust size as needed */
+    }
+
+    .shortcut-title h1 {
+        font-size: 20px;
+    }
+    
+    .shortcut-title h3 {
+        font-size: 12px;
+    }
+ }
+
+@media (min-width:1700px) {
+    .home-wrapper {
+        padding-top: 26svh;
+    }
+    
+}
