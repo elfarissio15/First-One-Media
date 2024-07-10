@@ -189,7 +189,7 @@ header {
     background-position: center;
     display: flex;
     flex-direction: column;
-    padding-top: 17svh;
+    padding-top: 14svh;
 }
 
 .shortcuts-container {
