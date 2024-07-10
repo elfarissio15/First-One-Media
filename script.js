@@ -117,7 +117,7 @@ document.getElementById('contactInformations').addEventListener('submit', functi
 
     // Fetch API example to handle form submission asynchronously
     
-    fetch('legal-wenda-oussamaelfarissi-ce59982d.koyeb.app/index.php', {
+    fetch('https://legal-wenda-oussamaelfarissi-ce59982d.koyeb.app/', {
         method: 'POST',
         body: new FormData(this)
     })
