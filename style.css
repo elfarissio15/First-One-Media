@@ -650,11 +650,11 @@ footer a:hover{
         display: flex;
     }
     .menu-item {
-        margin: 0 5px;
-        font-size: 16px;
+        margin: 0 0px;
+
     }
     .menu-nav-container {
-        margin-top: 0px;
+        margin-top: -5px;
     }
 
     .logo-container {
@@ -817,7 +817,7 @@ footer a:hover{
     }
 
     .single-shortcut {
-        width:100px;
+        width:118px;
         margin: 0 10px;
     }
 
@@ -830,7 +830,7 @@ footer a:hover{
     }
     
     .shortcut-title h3 {
-        font-size: 8.6px;
+        font-size: 10px;
     }
     .home-wrapper{
         padding-top: 8svh;
